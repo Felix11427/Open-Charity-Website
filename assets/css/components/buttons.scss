@@ -1,0 +1,156 @@
+// Homepage Buttons
+.home-donate-btn {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: $gradientButtonBG;
+    color: $lightText;
+    margin: 4% 0;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-donate-btn:hover {
+    color: $lightText;
+    background: $gradientButtonHoverBG;
+    transform: scale(1.05);
+}
+
+.read-more-btn {
+    background: $gradientButtonBG;
+    color: $lightText;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+    background: $gradientButtonHoverBG;
+    transform: translateY(-2px);
+}
+
+// Donate Page Buttons
+.collapse-card {
+    width: 100%;
+    font-size: 14px;
+    background-color: $softBlue;
+    color: $whiteText;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.collapse-card:hover {
+    background-color: $deepBlue;
+    color: $lightText;
+}
+
+.donate-primary-btn {
+    background: $gradientButtonBG;
+    margin-bottom: 12px;
+    color: $whiteText;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.donate-primary-btn:hover {
+    background: $gradientButtonHoverBG;
+    transform: scale(1.1);
+}
+
+// Calculator Styles
+#calc-wrapper {
+    position: fixed;
+    z-index: 1000;
+    width: 22%;
+    left: 39%;
+    bottom: 68%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calc-section {
+    position: relative;
+}
+
+#calc-header {
+    z-index: 15;
+    background: $softGrey;
+    color: $textDark;
+    padding: 10px;
+}
+
+.calc-screen {
+    width: 100%;
+    font-size: 1.7rem;
+    background: rgb(45, 45, 70);
+    color: $whiteText;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.calc-btn {
+    flex: 0 0 25%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    border-radius: 5px;
+    transition: background 0.4s ease-in-out, transform 0.2s;
+}
+
+.calc-btn:hover {
+    background: $hoverBlue;
+    transform: scale(1.1);
+}
+
+.btn-equal {
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 0 0 10px 10px;
+    background: $deepBlue;
+    color: $whiteText;
+}
+
+.btn-yellow {
+    background: #f8e71c;
+}
+
+.btn-grey {
+    background: #7d7d7d;
+}
+
+.btn-green {
+    background: #4caf50;
+}
+
+.btn-red {
+    background: #f44336;
+}
+
+// Contact Page Button
+#submit-btn {
+    background: linear-gradient(135deg, #18a3c8, #02648e);
+    color: $whiteText;
+    position: relative;
+    float: right;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#submit-btn:hover {
+    background: linear-gradient(135deg, #1fc0df, #0380b3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}

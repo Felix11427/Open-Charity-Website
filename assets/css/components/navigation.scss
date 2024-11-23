@@ -1,0 +1,116 @@
+/* Navigation Bar Base Styles */
+.navbar {
+  width: 100%;
+  background: $navbarGradientBG; /* Gradient background for a sleek look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-light {
+  background: transparent; /* Matches the gradient */
+}
+
+/* Navigation Brand */
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $primaryTextColor;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-brand:hover {
+  color: $highlightColor; /* Accent color for hover */
+}
+
+/* Navigation Links */
+.nav-link {
+  color: $lightTextColor;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: $highlightColor;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Animation for Buttons */
+.hvr-shutter-out-vertical {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: $buttonTextColor;
+  background: $buttonBGColor;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-shutter-out-vertical:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: $hoverHighlightColor;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hvr-shutter-out-vertical:hover:before {
+  transform: translateX(0);
+}
+
+.hvr-shutter-out-vertical:hover {
+  color: $hoverTextColor;
+  transform: scale(1.05);
+}
+
+/* Active Navigation State */
+.nav-active {
+  color: $highlightColor;
+  border-bottom: 2px solid $highlightColor;
+}
+
+/* Mobile Navigation */
+.navbar-toggler {
+  border: none;
+  background: $togglerBGColor;
+  color: $lightTextColor;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navbar-toggler:hover {
+  background: $togglerHoverColor;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background: $dropdownBG;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  color: $dropdownTextColor;
+  padding: 10px 15px;
+  transition: background 0.3s ease-in-out, color 0.2s;
+}
+
+.dropdown-item:hover {
+  background: $dropdownHoverBG;
+  color: $highlightColor;
+}

@@ -1,0 +1,68 @@
+/* Sticky Social Icons */
+
+.fixed-social-buttons {
+  position: fixed;
+  top: 50%;
+  padding: 0;
+  left: -40px;
+  width: 45%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+
+/* Social Icon Customization */
+
+.icon-tooltip:hover {
+  background-color: $hoverAccentColor;
+}
+
+.icon-facebook:hover {
+  background-color: $hoverFacebookColor;
+}
+
+.icon-twitter:hover {
+  background-color: $hoverTwitterColor;
+}
+
+.icon-instagram:hover {
+  background-color: $hoverInstagramColor;
+}
+
+.icon-youtube:hover {
+  background-color: $hoverYouTubeColor;
+}
+
+.icon-facebook {
+  background: $facebookPrimary;
+  color: $lightText;
+}
+
+.icon-twitter {
+  background: $twitterPrimary;
+  color: $lightText;
+}
+
+.icon-instagram {
+  background: $instagramPrimary;
+  color: $lightText;
+}
+
+.icon-youtube {
+  background: $youtubePrimary;
+  color: $lightText;
+}
+
+.icon-tooltip {
+  background-color: $tooltipBG;
+  color: $whiteText;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip-text {
+  font-size: 0.75rem;
+  vertical-align: middle;
+  font-weight: bold;
+}

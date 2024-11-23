@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Custom Hover Effect -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom-style.css" type="text/css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("user_jBNHynPWhUv5jwDizH0QT");
+        })();
+    </script>
+    <title>Support Our Cause: Contact Us</title>
+</head>
+
+<body class="contact-page-bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a href="index.html" class="navbar-brand custom-nav-brand">Support Our Cause</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link custom-nav-link hvr-shutter-out-vertical">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="map.html" class="nav-link custom-nav-link hvr-shutter-out-vertical">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="statistics.html" class="nav-link custom-nav-link hvr-shutter-out-vertical">Stats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link custom-nav-link hvr-shutter-out-vertical">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link custom-nav-link hvr-shutter-out-vertical">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <div class="container text-center contact-content">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="main-header">Get in Touch</h1>
+                        <h2 class="sub-header">For inquiries, support, or collaboration opportunities, please fill out the form below.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-form" id="contactForm">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required />
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" id="submitBtn" class="btn btn-custom-submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="cta-header">Join Us in Making a Difference!</h2>
+                        <p class="cta-text">Every contribution counts, and you can be a part of something bigger.</p>
+                        <a href="donate.html" class="btn btn-primary btn-cta">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Social Media Sidebar -->
+    <aside>
+        <ul class="social-media-sidebar">
+            <li><a href="http://www.facebook.com" target="_blank" class="facebook-icon"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="http://www.twitter.com" target="_blank" class="twitter-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="http://www.youtube.com" target="_blank" class="youtube-icon"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="http://www.instagram.com" target="_blank" class="instagram-icon"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <ul class="footer-links">
+                        <li><a href="tel:+1234567890" class="footer-link">Call Us: +123 4567 890</a></li>
+                        <li><a href="contact.html" class="footer-link">Send Us a Message</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <ul class="footer-links">
+                        <li><a href="donate.html" class="footer-link">Donate</a></li>
+                        <li><a href="map.html" class="footer-link">Our Locations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-social d-block d-sm-none">
+            <ul class="social-media-footer">
+                <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="assets/js/formSubmission.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+/* Common Styles for Backgrounds */
+%background {
+  position: relative;
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    attachment: fixed;
+  }
+  display: flex;
+  justify-content: flex-start; /* Better clarity */
+  align-items: center;
+  filter: brightness(0.9); /* Subtle darkening for text readability */
+}
+
+.hpimg-1,
+.hpimg-2,
+.hpimg-3,
+.hpimg-4,
+.hpimg-5 {
+  @extend %background;
+}
+
+/* Charity Page Carousel Pictures */
+%charityCarouselPics {
+  width: 100%;
+  height: 74vh;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05); /* Add subtle zoom effect */
+    filter: brightness(1.1);
+  }
+}
+
+.charityAsiaPic1 {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/India-Poverty.jpg');
+}
+
+.charityAfricaPic {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/Children-Uganda.jpg');
+}
+
+.charityAsiaPic2 {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/Jakarta-Slum.jpeg');
+}
+
+.charityEuropePic1 {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/Refugee-Child.jpg');
+  background-position: bottom;
+}
+
+.charitySAPic {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/Haiti-Poverty.jpeg');
+}
+
+.charityEuropePic2 {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/EuropeRefugees.jpg');
+}
+
+.charityRedCrossPic {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/American-Red-Cross.jpg');
+}
+
+.disasterReliefRedCrossPic {
+  @extend %charityCarouselPics;
+  background-image: url('../images/Charity-Images/Disaster-Relief-Red-Cross.jpg');
+}
+
+/* Charity Page Carousel Arrows */
+%carouselArrows {
+  height: 100px;
+  width: 100px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  @extend %carouselArrows;
+}
+
+/* Aside Social Media Buttons */
+%asideStyles {
+  display: block;
+  width: 90px; /* Slightly larger for visibility */
+  padding: 12px 6px;
+  color: $white;
+  background: linear-gradient(to right, $primaryColor, $secondaryColor); /* Gradient for uniqueness */
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 20px 0;
+  transition: transform 0.3s ease, background 0.3s;
+  &:hover {
+    transform: translateX(10px); /* Subtle slide effect */
+    background: linear-gradient(to right, $secondaryColor, $primaryColor);
+  }
+}
+
+.social-media-button a,
+.social-media-button div {
+  @extend %asideStyles;
+}
+
+/* Footer Social Media Icons */
+%footerIcons {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: $white;
+  border: 2px solid $primaryColor;
+  border-radius: 50%;
+  background: $iconBackground;
+  transition: transform 0.3s ease, background 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+    background: $iconHoverBackground;
+  }
+}
+
+.facebook-footer,
+.twitter-footer,
+.youtube-footer,
+.instagram-footer {
+  @extend %footerIcons;
+}

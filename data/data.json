@@ -1,0 +1,12 @@
+[
+    { "nation": "DRC", "gdp_value": 475, "gini_index": 45.7, "unemployment_percentage": 46.1, "unemployment_year": 2013 },
+    { "nation": "Mozambique", "gdp_value": 502, "gini_index": 54.0, "unemployment_percentage": 25.04, "unemployment_year": 2017 },
+    { "nation": "Uganda", "gdp_value": 759, "gini_index": 42.8, "unemployment_percentage": 2.1, "unemployment_year": 2017 },
+    { "nation": "Tajikistan", "gdp_value": 861, "gini_index": 34.0, "unemployment_percentage": 2.3, "unemployment_year": 2018 },
+    { "nation": "Yemen", "gdp_value": 913, "gini_index": 36.7, "unemployment_percentage": 12.9, "unemployment_year": 2018 },
+    { "nation": "Haiti", "gdp_value": 923, "gini_index": 41.1, "unemployment_percentage": 14.0, "unemployment_year": 2017 },
+    { "nation": "Ethiopia", "gdp_value": 1122, "gini_index": 39.1, "unemployment_percentage": 19.1, "unemployment_year": 2018 },
+    { "nation": "Tanzania", "gdp_value": 1159, "gini_index": 37.8, "unemployment_percentage": 10.3, "unemployment_year": 2014 },
+    { "nation": "Kyrgyzstan", "gdp_value": 1266, "gini_index": 27.3, "unemployment_percentage": 3.2, "unemployment_year": 2019 },
+    { "nation": "Uzbekistan", "gdp_value": 1350, "gini_index": 35.3, "unemployment_percentage": 6.9, "unemployment_year": 2018 }
+]

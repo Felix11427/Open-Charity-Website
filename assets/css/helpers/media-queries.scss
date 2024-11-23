@@ -1,0 +1,161 @@
+/* Define Breakpoints */
+$phone-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-desktop-width: 1200px;
+
+/* Mixin for Phone View */
+@mixin phone {
+  @media (max-width: $phone-width) {
+    // Homepage
+    .textHP1 {
+      margin: 30px 0 0 20px;
+      padding-left: 10px;
+    }
+    .section {
+      margin-left: 20px;
+    }
+    .donateButtonStyleHP {
+      height: 45px;
+    }
+
+    // Map Page
+    .mapInstruction {
+      padding-top: 15%;
+    }
+
+    // Statistics Texts
+    .chartText {
+      margin: 0 5%;
+      text-align: center;
+    }
+    .chartStyling {
+      background-color: $white;
+      margin: 50px 0;
+      padding: 30px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .heading-margin, .chart-margin {
+      margin-left: 10px;
+    }
+
+    // Aside Buttons
+    .social-media-button {
+      width: 8%;
+      a, div {
+        transform: translateX(-10px);
+      }
+    }
+
+    // Footer
+    #footer {
+      height: 100px;
+    }
+
+    // Contact Page
+    .text-box-length {
+      width: 250px;
+      margin: 5px auto;
+    }
+  }
+}
+@include phone;
+
+/* Mixin for Tablet View */
+@mixin tablet {
+  @media (min-width: $phone-width) and (max-width: $tablet-width) {
+    h1 { font-size: 42px; }
+    h2 { font-size: 32px; }
+    h3 { font-size: 22px; }
+
+    // Homepage
+    .hpimg-1 { padding: 140px 0; }
+    .hpimg-2, .hpimg-3, .hpimg-4 { height: 850px; }
+    .text { padding: 10px; position: relative; }
+    .MotherTeresaQuote {
+      font-size: 24px;
+      position: relative;
+    }
+
+    // Statistics Page
+    .graph-color { color: $black; }
+    #statsBox { height: 450px; }
+    .heading-margin, .chart-margin { margin-left: 0; }
+    .row-flex { margin-bottom: 0; }
+
+    // Contact Page
+    .text-box-length { width: 350px; }
+    .contactMeBulletPoints { height: 280px; top: 2em; }
+    .contact-list { list-style: none; }
+
+    // Aside Buttons
+    .social-media-button {
+      left: 10px;
+      padding-left: 30px !important;
+      a, div {
+        transform: translateX(-80px);
+      }
+    }
+  }
+}
+@include tablet;
+
+/* Mixin for Desktop View */
+@mixin desktop {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    p { font-size: 16px; }
+
+    // Homepage
+    .hpimg-1 { padding: 90px 0 300px 0; }
+
+    // Map Page
+    .mapInstruction { padding-top: 12%; }
+    .stats-banner-text { font-size: 24px; }
+
+    // Statistics Page
+    div.dc-chart {
+      float: none;
+      text-align: center;
+    }
+
+    // Aside Buttons Hover
+    .sideCalculator:hover, .facebook:hover, .twitter:hover, 
+    .instagram:hover, .youtube:hover {
+      background-color: $hoverColor;
+      transform: translateX(-15px);
+    }
+  }
+}
+@include desktop;
+
+/* Mixin for Large Desktop View */
+@mixin large-desktop {
+  @media (min-width: $large-desktop-width) {
+    // Homepage
+    .hpimg-1 { padding: 180px 0; }
+    .hpimg-2, .hpimg-3, .hpimg-4 {
+      width: 100%;
+      height: 900px;
+    }
+    .textHP1 { padding-left: 30px; }
+    .section { margin-left: 30px; }
+
+    // Aside Buttons
+    .social-media-button {
+      left: -25px;
+      a, div {
+        transform: translateX(-50px);
+      }
+    }
+
+    // Statistics Page
+    #statsBox { height: 550px; }
+    .stats-banner-text { font-size: 28px; }
+
+    // Contact Page
+    .text-box-length { width: 700px; }
+  }
+}
+@include large-desktop;

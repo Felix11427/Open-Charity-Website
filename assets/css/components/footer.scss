@@ -1,0 +1,85 @@
+/* Footer Container */
+#site-footer {
+  width: 100%;
+  min-height: 280px;
+  padding: 40px 20px;
+  background: $footerBackgroundGradient; /* Updated for a gradient background */
+  position: relative;
+  color: $lightText;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Navigation Links */
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer-nav-item {
+  margin: 0 15px;
+}
+
+.footer-link {
+  color: $softWhite;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: $highlightColor; /* Accent color for hover */
+  text-decoration: underline;
+}
+
+/* Social Media Section */
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.social-icon {
+  color: $iconDefaultColor;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.social-icon:hover {
+  color: $iconHoverColor;
+  transform: scale(1.2);
+}
+
+/* Facebook-specific Styling */
+.icon-facebook {
+  color: $facebookPrimaryColor;
+}
+
+/* Additional Elements */
+.footer-text {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer-logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.footer-logo:hover {
+  filter: grayscale(0%);
+}
